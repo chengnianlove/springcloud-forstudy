@@ -1,0 +1,15 @@
+server:
+  port: 9281
+  servlet:
+    context-path: /service1
+spring:
+  application:
+    name: service1
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.22.126:8848
+        namespace: a8862c1f-59a2-48c8-bfae-ff889d661c44
+        group: dev
+        file-extension: yaml
+#        name: service1.yaml
